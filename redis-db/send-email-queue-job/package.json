@@ -1,0 +1,30 @@
+{
+  "name": "send-email-queue-job",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --config nodemon.json src/app.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts",
+    "start": "tsc && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^3.22.6",
+    "bull-board": "^2.1.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.1"
+  },
+  "devDependencies": {
+    "@types/bull": "^3.15.1",
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.6.1",
+    "@types/nodemailer": "^6.4.2",
+    "nodemon": "^2.0.7",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  }
+}
